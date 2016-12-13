@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* CSS Document */
+body {font-family: 'Quicksand', san-serif;
+	background-color:#FFF}
+::selection {background:#B00050;color:white;}
+header {text-align:center;
+}
+header h1 {
+	font-size:3em;
+	font-family: 'Quicksand', sans-serif;
+	
+}
+header h2 {
+	font-size:2em;
+	font-family: 'Quicksand', sans-serif;
+	font-weight:300;
+}
+
+#instructions {text-align:center;}
+
+#buttons {text-align:center;margin-left:auto;margin-right:auto;margin-top:2em;}
+
+#buttons button {font-family: "Quicksand", san-serif;
+	font-weight:bold;
+	width:40%;
+	margin:2%;
+	height:4em;
+	border:none;
+	color:white;
+	background-color:#D200B2;
+	}
+#buttons button:hover {
+	-webkit-transform:translateY(2px);
+	transform:translateY(2px);
+}
+
+#buttons button:active {
+	background-color:#B00050;
+	
+}
+
+#buttons ul li {display:inline; }
+
+#coming {text-align:center;margin-top:5em;}
+

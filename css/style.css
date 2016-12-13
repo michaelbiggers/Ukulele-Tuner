@@ -1,0 +1,29 @@
+body {
+	font-family:'Antic';
+	color:#0D47A1;
+}
+.jumbotron {
+	background-color:#0D47A1;
+	color:#E8EAF6;
+	font-family:'Antic Slab';
+}
+.jumbotron h2 {
+	font-family:'Antic';
+}
+.toneButton {
+	height:5em;
+	width:70%;
+	background-color:#2196F3;
+	color:white;
+	border:none;
+	font-size:16px;
+}
+.toneButton:hover {
+	background-color:#4CAF50;
+}
+.bottom-space {
+	margin-bottom:3em;
+}
+button {
+	margin-bottom:3em;
+}

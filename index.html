@@ -1,0 +1,158 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ukulele Tuner</title>
+<!--<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="myStyles.css" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css">-->
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+<link href='https://fonts.googleapis.com/css?family=Antic+Slab|Antic' rel='stylesheet' type='text/css'>
+
+<link rel = "stylesheet" href = "css/style.css" type = "text/css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--<script src="respond.min.js"></script>-->
+</head>
+<!--
+<body>
+<div class="gridContainer clearfix">
+      <header id="header" class="fluid ">
+        <h1>UKULELE TUNER</h1>
+        <h2>TUNE IT PERFECT, EVERY TIME </h2>
+        </header>
+    
+   	  <section class="fluid" id="instructions">
+      	<h3>How to Use It</h3>
+        <p>Make sure you're using a ukulele; any ukulele other than a baritone will work. If you're playing right-handed (the head pointed to your left), the first tone will be the string on top, closest to your face. Tap the note for the string you want to tune, and tap it again to make it stop.
+        </p>
+      </section>
+      
+      <section class="fluid" id="buttons">
+      	<ul class = "fluidList">
+           <li> <button type = "button" id = "g" onClick="playG()">G</button></li>
+           		<audio id = "gnote"> <source src = "audio/gNote.wav" preload = "auto"></audio>
+           <li><button type = "button" id = "c" onClick = "playC()">C</button></li>
+           		<audio id = "cnote"> <source src = "audio/cNote.wav" preload = "auto"></audio>
+           <li><button type = "button" id = "e" onClick = "playE()" preload = "auto">E</button></li>
+           		<audio id = "enote"> <source src = "audio/eNote.wav" preload = "auto"></audio>
+           <li><button type = "button" id ="a" onClick = "playA()">A</button></li>
+           		<audio id = "anote"> <source src = "audio/aNote.wav" preload = "auto"></audio>
+        </ul>
+      </section>
+      
+  		<section class="fluid" id = "coming"><h4>Coming Soon: Baritone Ukulele tuner</h4>
+        </section>
+  </div>
+    
+    
+	
+</body>
+-->
+<body>
+  <div class ="jumbotron text-center">
+    <div class = "container-fluid">
+      <h1>Ukulele Tuner</h1>
+      <h2>Tune it perfectly, every time</h2>
+    </div>
+  </div>
+
+  <div class = "container-fluid">
+    <div class = "row text-center">
+      <h3>How do I use this?</h3>
+    </div>
+
+    <div class = "row text-center bottom-space">
+      <div class = "col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
+        <p>Make sure you're using a ukulele; any ukulele other than a baritone will work. If you're playing right-handed (the head pointed to your left), the first tone will be the string on top, closest to your face. Tap the note for the string you want to tune, and tap it again to make it stop.
+        </p>
+      </div>
+    </div>
+
+  <!--start button section-->
+    <!--first row, G button and C button-->
+    <section id = "tuner">
+      <div class = "row text-center">
+        <div class = "col-sm-5 col-sm-offset-1">
+          <button type = "button" id = "g" class = "toneButton"onClick="playG()">G</button>
+          <audio id = "gnote"> <source src = "audio/gNote.wav" preload = "auto"></audio>
+        </div>
+        <div class = "col-sm-5 ">
+          <button type = "button" id = "c" class = "toneButton" onClick = "playC()">C</button>
+          <audio id = "cnote"> <source src = "audio/cNote.wav" preload = "auto"></audio>
+        </div>
+      </div>
+      <!--end first row-->
+      <!--start second row, E button and A button-->
+      <div class = "row text-center ">
+        <div class = "col-sm-5 col-sm-offset-1">
+          <button type = "button" id = "e" class = "toneButton" onClick = "playE()" preload = "auto">E</button>
+          <audio id = "enote"> <source src = "audio/eNote.wav" preload = "auto"></audio>
+        </div>
+        <div class = "col-sm-5">
+          <button type = "button" id ="a" class = "toneButton" onClick = "playA()">A</button>
+          <audio id = "anote"> <source src = "audio/aNote.wav" preload = "auto"></audio>
+        </div>
+      </div>
+    </section>
+
+    <div class = "row text-center">
+      <p>Coming soon - Baritone Ukulele Tuner</p>
+      <p>Created by 
+          <a href = "http://www.michaelbiggers.com">Michael Biggers</a>
+      </p>
+    </div>
+<!--
+    <ul class = "tuningButtons">
+           <li> 
+              <button type = "button" id = "g" onClick="playG()">G</button>
+            </li>
+              <audio id = "gnote"> <source src = "audio/gNote.wav" preload = "auto"></audio>
+           <li>
+              <button type = "button" id = "c" onClick = "playC()">C</button>
+            </li>
+              <audio id = "cnote"> <source src = "audio/cNote.wav" preload = "auto"></audio>
+           <li>
+              <button type = "button" id = "e" onClick = "playE()" preload = "auto">E</button>
+            </li>
+              <audio id = "enote"> <source src = "audio/eNote.wav" preload = "auto"></audio>
+           <li>
+              <button type = "button" id ="a" onClick = "playA()">A</button>
+            </li>
+              <audio id = "anote"> <source src = "audio/aNote.wav" preload = "auto"></audio>
+        </ul>
+-->
+  </div><!--close content container-->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src = "myScripts.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+</body>
+</html>
